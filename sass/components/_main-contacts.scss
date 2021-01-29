@@ -1,0 +1,35 @@
+.main-contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.main-contacts__details {
+  display: flex;
+  align-items: center;
+  padding: 32px 0;
+  border: none;
+  width: 100%;
+  color: $main-text-color;
+  font-weight: $sec-font-weight;
+  line-height: $sec-line-height;
+  letter-spacing: 0.02em;
+
+  @include transit(color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.main-contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+  cursor: pointer;
+
+  @include transit(fill);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

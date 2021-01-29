@@ -1,0 +1,122 @@
+.line {
+  border-bottom: 1px solid $border-portfolio-color;
+}
+
+.work-examples__item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.example {
+  display: block;
+
+  @include transit(box-shadow);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.example__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.example__overlay {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  margin: 0;
+  background-color: $overlay-bg-color;
+  @include transit(transform);
+
+  .example:focus &,
+  .example:hover & {
+    transform: translateY(-100%);
+  }
+}
+
+.example__details {
+  margin: 0;
+  padding: 63px 24px;
+  font-size: $example-title-details-font-size;
+  line-height: $example-details-line-height;
+  color: $main-bg-color;
+}
+
+.example__content {
+  padding: 20px 24px;
+  border-bottom: 1px solid $border-portfolio-color;
+  border-right: 1px solid $border-portfolio-color;
+  border-left: 1px solid $border-portfolio-color;
+  background: $main-bg-color;
+  box-sizing: border-box;
+}
+
+.example__title {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-weight: $title-font-weight;
+  font-size: $example-title-details-font-size;
+  line-height: $example-title-line-height;
+  text-align: left;
+  letter-spacing: 0.06em;
+  color: $main-black-color;
+}
+
+.work-examples {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item:nth-child(3n) {
+    margin-right: 0;
+  }
+  &__item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+}
+
+.example__description {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $main-text-color;
+  font-size: $sec-font-size;
+  line-height: $btn-example-description-line-height;
+}
+
+.portfolio-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-btn__item {
+  display: inline-block;
+  padding: 6px 22px;
+  margin-bottom: 50px;
+  margin-right: 8px;
+  border-radius: $border-radius-button;
+  background-color: $add-bg-color;
+  color: $title-text-color;
+  font-family: inherit;
+  font-weight: $sec-font-weight;
+  font-size: $sec-font-size;
+  line-height: $filter-list-item-line-height;
+  text-align: center;
+  cursor: pointer;
+  border: transparent;
+  /* outline: transparent; */
+  @include transit(background-color, color);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $main-white-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px $border-modal-btn;
+  }
+}

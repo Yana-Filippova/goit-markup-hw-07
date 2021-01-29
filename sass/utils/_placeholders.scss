@@ -1,0 +1,16 @@
+%btn {
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 0;
+  background-color: $accent-color;
+  color: $main-white-color;
+  box-shadow: 0px 4px 4px $box-shadow-color;
+  border-radius: $border-radius-button;
+  border: transparent;
+  font-family: inherit;
+  font-weight: $title-font-weight;
+  font-size: $sec-font-size;
+  line-height: $btn-example-description-line-height;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}

@@ -1,0 +1,48 @@
+body {
+  background-color: $main-bg-color;
+  color: $main-text-color;
+  font-family: $main-font-family;
+  font-size: $main-font-size;
+  line-height: $main-line-height;
+  letter-spacing: 0.03em;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  // outline: 2px solid tomato used for checking;
+}
+
+.list {
+  font-style: normal;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: $title-text-color;
+  font-weight: $title-font-weight;
+  font-size: $title-font-size;
+  line-height: $title-line-height;
+  text-align: center;
+}

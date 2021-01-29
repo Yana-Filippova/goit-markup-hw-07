@@ -1,0 +1,35 @@
+.activities {
+  padding-top: 0;
+}
+
+.activities__list {
+  display: flex;
+}
+
+.activities__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.activities__thumb {
+  position: relative;
+}
+
+.activities__overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: $overlay-text-color;
+}
+
+.activities__heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $main-bg-color;
+  font-weight: $title-font-weight;
+  line-height: $sec-line-height;
+  text-align: center;
+  text-transform: uppercase;
+}

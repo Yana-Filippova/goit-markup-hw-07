@@ -1,0 +1,21 @@
+.logo {
+  display: inline-block;
+  font-family: $logo-font-family;
+  font-weight: $title-font-weight;
+  font-size: $logo-font-size;
+  line-height: $logo-photo-line-height;
+}
+
+.logo--start {
+  color: $accent-color;
+}
+
+.logo--end {
+  color: $main-black-color;
+}
+
+.logo--inverse {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: $main-white-color;
+}

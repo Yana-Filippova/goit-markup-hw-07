@@ -1,0 +1,28 @@
+.page-footer {
+  padding: 60px 0;
+  background-color: $sec-bg-color;
+}
+
+.page-footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.page-footer__contacts-container {
+  width: 231px;
+  margin-right: 70px;
+}
+
+.page-footer__social-container {
+  width: 206px;
+  margin-right: 93px;
+}
+
+.page-footer__action {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: $title-font-weight;
+  line-height: $sec-line-height;
+  text-transform: uppercase;
+  color: $main-white-color;
+}

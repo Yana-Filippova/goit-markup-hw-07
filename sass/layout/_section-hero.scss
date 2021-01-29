@@ -1,0 +1,35 @@
+.hero__overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      to right,
+      $bg-overlay-transparent-color,
+      $bg-overlay-transparent-color
+    ),
+    url('../images/overlay.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 200px 0;
+  background-color: $hero-bg-color;
+  text-align: center;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: $main-white-color;
+  font-weight: $hero-title-font-weight;
+  font-size: $hero-title-font-size;
+  line-height: $hero-title-line-height;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero__btn {
+  @extend %btn;
+  padding-left: 32px;
+  padding-right: 32px;
+  outline: transparent;
+}

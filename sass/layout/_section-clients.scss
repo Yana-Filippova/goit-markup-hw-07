@@ -1,0 +1,29 @@
+.clients__list {
+  display: flex;
+}
+
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__link {
+  @include centeredFlex();
+  width: 170px;
+  height: 90px;
+  @include bordered($icon-color);
+  border-radius: 4px;
+  color: $icon-color;
+  @include transit(color, border-color);
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    color: $accent-color;
+    filter: drop-shadow(0px 4px 4px $client-drop-shadow);
+    cursor: pointer;
+  }
+}
+
+.clients__logo {
+  fill: currentColor;
+}

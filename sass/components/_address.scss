@@ -1,0 +1,22 @@
+.address {
+  margin-top: 0;
+  margin-bottom: 9px;
+  padding-top: 20px;
+  color: $main-white-color;
+  font-style: normal;
+}
+
+.address__contacts-item {
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+
+.address__contacts-item:last-child {
+  margin-bottom: 0;
+}
+
+.address__contacts-link {
+  display: block;
+  color: $add-footer-color;
+  font-style: normal;
+}
